@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="JS5.css">
+    </head>
+    
+    <body>
+        <label for="name1">Name:</label>
+        <input type="text" name="name1" id="name1" required><br><br>
+        <label for="email1">Email:</label>
+        <input type="email" name="email1" id="email1" required>
+
+
+        <h2> Toppings: </h2>
+
+        <label for="foodie1">Extra Cheese:</label>
+        <input type="checkbox" name="element" id="foodie1" value="Extra Cheese">
+        <label for="foodie2">Pepperonl:</label>
+        <input type="checkbox" name="element" id="foodie2" value="Pepperonal">
+        <label for="foodie3">Olives:</label>
+        <input type="checkbox" name="element" id="foodie3" value="Olives">
+        <label for="foodie4">Pepper:</label>
+        <input type="checkbox" name="element" id="foodie4" value="Pepper">
+        <label for="foodie5">Bacon:</label>
+
+        <input type="checkbox" name="element" id="foodie5" value="Bacon">
+        <label for="foodie6">Tomatos:</label>
+        <input type="checkbox" name="element" id="foodie6" value="Tomatos">
+        <label for="foodie7">Mashrooms:</label>
+        <input type="checkbox" name="element" id="foodie7" value="Mashromms">
+
+        <p> How do you want your pizza ! </p>
+
+        <input type="radio" id="option1" name="opt" value="Delivery">
+        <label for="option1">Delivery</label>
+        <input type="radio" id="option2" name="opt" value="Pickup">
+        <label for="option2">Pickup</label><br><br>
+
+
+
+        <label for="tip">Tip?</label>
+        <select name="tip" id="tips">
+        <option value="15%" id="one">15%</option>
+        <option value="20%" id="two">20%</option>
+        <option value="25%" id="three">25%</option>
+    </select><br><br><br>
+
+
+    <label for="add">Address</label><br>
+    <textarea name="add" id="address1" cols="50" rows="10"></textarea>
+    <br>
+        
+        <button>Submit</button>
+        <button>Reset</button>
+
+        <button onclick="acceptInput()" id="btn">Show Summary</button>
+
+
+   <table id="resultTable" border="1">
+        <tr>
+         <th>Full Name:</th>
+         <td><input type="text" name="FullName2" id="name" readonly></td>
+        </tr>
+        <tr>
+          <th>Email:</th>
+          <td><input type="text" name="MemberID2" id="email2" readonly></td>
+        </tr>
+        <tr>
+            <th>Address:</th>
+            <td><input type="text" name="add1" id="address2" readonly ></td>
+        </tr>
+         <tr>
+             <th>Topings: </th>
+             <td input type="text" id="cheek" ></td>
+        </tr>   
+         <tr>
+             <th>Delivery </th>
+             <td input type="text" id="deliver" ></td>
+        </tr>              
+
+        <tr>
+             <th>Tip Amount</th>
+             <td><span class="output"></span></td>
+        </tr>       
+        <tr>
+            <th>Total</th>
+            <td><input type="number" id="price"></td>
+        </tr>
+                
+        <script src="JS5.js"></script>
+        
+    </body>
+</html>

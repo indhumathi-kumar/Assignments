@@ -1,0 +1,25 @@
+<html>
+    <body>
+        
+    <table id="table" border="1"> 
+    </table>
+        
+    <script>
+        function createTable(){
+        row = window.prompt("Enter number of rows");
+        col = window.prompt("Enter number of columns");
+  
+         for(var r=0;r<parseInt(row,10);r++){
+             var x=document.getElementById('table').insertRow();
+               for(var c=0;c<parseInt(col,10);c++){
+                   var y= x.insertCell();
+                   y.innerHTML="Row"+r+" Column"+c; 
+                }
+         }     
+        }
+        createTable();
+    </script>
+
+    </body>
+
+</html>
